@@ -1,0 +1,14 @@
+.crystal-image {
+      width: 200px;
+      height: 200px;
+  }
+
+
+  body
+  {
+  	background-image: url("../images/weather.png");
+   background-attachment: fixed;
+    background-position: center;
+    background-repeat:repeat;
+    background-size: cover;
+  }
