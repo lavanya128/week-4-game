@@ -1,4 +1,7 @@
 //random number to guess.
+// randomNumber();
+// function randomNumber()
+// {
 	var noGuess=[77,45,62,99,57,34];
     var targetNumber=noGuess[Math.floor(Math.random()* noGuess.length)];
 
@@ -10,7 +13,7 @@
 
   //random set of values for the images
     var numberOptions = [[10, 5, 3, 2],
-                         [11, 6,  9,3],
+                         [11, 6, 9, 3],
 						 [7, 1, 14, 5],
 						 [9, 10, 2, 4]];
     var ranNumber=numberOptions[Math.floor(Math.random() * numberOptions.length)];
@@ -24,6 +27,7 @@
 		imageCrystal.attr("data-crystalvalue", ranNumber[i]);
 		$("#crystals").append(imageCrystal);
 	}
+//};
 
 //on button click function display the new total score.
 	$(".crystal-image").on("click", function() 
@@ -37,8 +41,8 @@
     	{
       		alert("You win!");
       		$("#winloose").html("<h1> You win!!!!! </h1>");
+      		//randomNumber();
     	}
-
     	else if (counter > targetNumber) 
     	{
       		alert("You lose!!");
